@@ -1,0 +1,21 @@
+# Gradle / Android Studio
+*.iml
+.gradle/
+.kotlin/
+build/
+/captures
+.externalNativeBuild
+.cxx
+.idea/
+
+# Local configuration (SDK path, API keys) — never commit
+local.properties
+
+# Build outputs
+*.apk
+*.aab
+
+# OS files
+.DS_Store
+desktop.ini
+Thumbs.db

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Фильтр отелей"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_blue"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Фильтр по городу -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Город"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/filterCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Все города"
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_background"
+        android:layout_marginTop="4dp" />
+
+    <!-- Фильтр по минимальной цене -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Минимальная цена (₸)"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp" />
+
+    <EditText
+        android:id="@+id/minPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="0"
+        android:inputType="number"
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_background"
+        android:layout_marginTop="4dp" />
+
+    <!-- Фильтр по максимальной цене -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Максимальная цена (₸)"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp" />
+
+    <EditText
+        android:id="@+id/maxPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Любая"
+        android:inputType="number"
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_background"
+        android:layout_marginTop="4dp" />
+
+    <!-- Фильтр по рейтингу -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Минимальный рейтинг"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp" />
+
+    <Spinner
+        android:id="@+id/ratingSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp" />
+
+    <!-- Кнопки -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp">
+
+        <Button
+            android:id="@+id/resetFilterButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Сброс"
+            android:layout_marginEnd="8dp"
+            android:background="@android:drawable/btn_default" />
+
+        <Button
+            android:id="@+id/applyFilterButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Применить"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_button_primary"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

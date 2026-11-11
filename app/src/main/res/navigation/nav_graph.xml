@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_hotels">
+
+    <fragment
+        android:id="@+id/navigation_hotels"
+        android:name="com.qonak.app.hotels.HotelsFragment"
+        android:label="Отели"
+        tools:layout="@layout/fragment_hotels" />
+
+    <fragment
+        android:id="@+id/navigation_restaurants"
+        android:name="com.qonak.app.restaurants.RestaurantsFragment"
+        android:label="Рестораны"
+        tools:layout="@layout/fragment_restaurants" />
+
+    <fragment
+        android:id="@+id/navigation_bookings"
+        android:name="com.qonak.app.bookings.BookingsFragment"
+        android:label="Мои бронирования"
+        tools:layout="@layout/fragment_bookings" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.qonak.app.profile.ProfileFragment"
+        android:label="Профиль"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/navigation_map"
+        android:name="com.qonak.app.maps.MapsFragment"
+        android:label="Карта"
+        tools:layout="@layout/fragment_maps" />
+
+</navigation>
